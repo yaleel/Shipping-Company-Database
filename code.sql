@@ -340,16 +340,3 @@ VALUES (723174586,8.9,160201316,4752360,'NORTH',724275418);
 INSERT INTO shipment
 VALUES (518990877,4.5,671865814,5041768,'EAST',594643165);
 
-
-
-SELECT c.customerID ,addres ,shipmentID , d.deliveryAgentID
-FROM customer c ,  shipment s , delivery_agent d
-WHERE c.customerID=s.customerID AND  d.deliveryAgentID = s.deliveryAgentID;
-
-
-
-SELECT employeeID , position
-FROM employee
-WHERE position IN ('Shipping Clerk') ;
-
-
